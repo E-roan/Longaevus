@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LONGAEVUS</title>
     <style>
-        p{
+        p {
             color: beige;
             position: relative;
         }
-        #bo{
+
+        #bo {
             position: absolute;
             z-index: -1;
             filter: blur(0px);
@@ -18,79 +20,114 @@
             width: 30%;
             height: auto;
         }
+
+        .wrapper-main {
+            width: 100%;
+            align-items: center;
+        }
+
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff; /* Világoskék háttér */
+            background-color: #f0f8ff;
+            /* Világoskék háttér */
             color: #333;
             text-align: center;
         }
+
         h1 {
             font-size: 4em;
             margin-top: 20px;
-            position: relative;
+            /*position: relative;
             top: 70px;
-            left: -400px;
+            left: -400px;*/
+            align-items: center;
 
         }
+
         .subtitle {
             font-size: 1.5em;
             font-weight: bold;
             margin-top: 10px;
+            align-items: center;
         }
+
         .description {
-            
+            align-items: center;
             font-size: 1.2em;
             margin: 20px 10%;
         }
+
         .features {
-            position: relative;     
-            left: 100px; 
-            width: 1000px;
+            position: relative;
+            left: 10%;
+            width: 60%;
+            align-items: center;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
             margin: 20px 10%;
         }
+
         .feature-bubble {
-            background-color: rgb(76,12,4);
+            background-color: rgb(76, 12, 4);
             border: 2px solid #ccc;
             border-radius: 15px;
             padding: 20px;
             font-size: 1.1em;
             width: 200px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            align-items: center;
         }
+
         .footer-text {
+            align-items: center;
             font-size: 1.5em;
             font-weight: bold;
             margin-top: 30px;
         }
     </style>
 </head>
+
 <body>
-    <h1>LONGAEVUS</h1>
-    <img src="logo.png" id="bo" >
-    <div style="height: 100px;"></div>
-    <div class="subtitle">Az új otthon, ahol az élet kivirágzik</div>
-    
-    <div class="description">
-        A Longaevus egy különleges, nyugdíjasok számára kialakított lakópark, amely az elmagányosodás helyett a közösség erejét nyújtja.
-        Itt minden adott a teljes gondtalan élethez:
+    <div class="wrapper-main">
+        <h1>LONGAEVUS</h1>
+        <img src="logo.png" id="bo">
+        <div style="height: 100px;"></div>
+        <div class="subtitle">Az új otthon, ahol az élet kivirágzik</div>
+
+        <div class="description">
+            A Longaevus egy különleges, nyugdíjasok számára kialakított lakópark, amely az elmagányosodás helyett a
+            közösség
+            erejét nyújtja.
+            Itt minden adott a teljes gondtalan élethez:
+        </div>
+        <div class="features">
+
+            <div class="feature-bubble">
+                <p>Esztétikai szolgáltatások</p>
+            </div>
+            <div class="feature-bubble">
+                <p>Gyógytorna</p>
+            </div>
+            <div class="feature-bubble">
+                <p>Orvosi ellátás</p>
+            </div>
+            <div class="feature-bubble">
+                <p>Mozgási lehetőség</p>
+            </div>
+            <div class="feature-bubble">
+                <p>Segítőkész munkatársak</p>
+            </div>
+        </div>
+        <div class="footer-text">
+            NEM CSUPÁN LAKÓHELY - EGY OTTHON, AHOL AZ ÉLETMINŐSÉG ÉS A KÖZÖSSÉG AZ ELSŐ
+        </div>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2980.73580009234!2d24.57110601075101!3d46.53086538049522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x474bb7af0285a88f%3A0xe85295dc39d79e19!2sCalea%20Sighi%C8%99oarei%2C%20T%C3%A2rgu%20Mure%C8%99%20547176!5e1!3m2!1shu!2sro!4v1733344002045!5m2!1shu!2sro" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-    <div class="features">
-        
-        <div class="feature-bubble"><p>Esztétikai szolgáltatások</p></div>
-        <div class="feature-bubble"><p>Gyógytorna</p></div>
-        <div class="feature-bubble"><p>Orvosi ellátás</p></div>
-        <div class="feature-bubble"><p>Mozgási lehetőség</p></div>
-        <div class="feature-bubble"><p>Segítőkész munkatársak</p></div>
-        
-    </div>
-    <div class="footer-text">
-        NEM CSUPÁN LAKÓHELY - EGY OTTHON, AHOL AZ ÉLETMINŐSÉG ÉS A KÖZÖSSÉG AZ ELSŐ
-    </div>
+
 </body>
+
 </html>
